@@ -1,0 +1,24 @@
+# dependencies
+node_modules
+client/node_modules
+
+# builds
+client/dist
+
+# environment files
+.env
+.env.local
+
+# database
+*.db
+*.sqlite
+*.sqlite3
+/prisma/dev.db
+/prisma/dev.db-journal
+
+# logs
+*.log
+
+# system
+.DS_Store
+.vscode/

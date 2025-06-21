@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+/* --- MODELS -------------------------------------------------- */
+
+model User {
+  id            Int      @id @default(autoincrement())
+  firstName     String
+  lastName      String
+  username      String   @unique
+  email         String   @unique
+
+  language      String   @default("en-US")
+  tone          String   @default("romantic")
+  consentToMuse Boolean  @default(true)
+
+  /* location */
+  country       String?
+  region        String?
+  city          String?
+  postalCode    String?
+
+  /* e-mail confirmation */
+  emailVerified Boolean  @default(false)
+  emailToken    String?  @unique
+  tokenExpires  DateTime?
+
+  createdAt     DateTime @default(now())
+}
+
+

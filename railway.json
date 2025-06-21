@@ -1,0 +1,6 @@
+{
+  "root": "./",
+  "build": { "command": "npm run build" },
+  "deploy": { "command": "npm start" }
+}
+
