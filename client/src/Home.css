@@ -1,0 +1,47 @@
+.home-container {
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.login-top-right {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.login-button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.center-content {
+  margin-top: 20vh;
+}
+
+.awen-title {
+  font-size: 2.5rem;
+  font-family: serif;
+  margin-bottom: 0.5rem;
+}
+
+.awen-tagline {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.join-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 999px;
+  border: none;
+  background-color: #e0d3ff;
+  color: #3a176e;
+  cursor: pointer;
+}
